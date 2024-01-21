@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>uPanelCode</title>
+    
+</head>
+<body>
+
+   <div class="window-header" id="header-script">
+       <h1 class="window-header-title-text-name">uPanel<span class="window-header-title-name-container-one">code</span> </h1>
+       <img src="menu.png"  onclick="openPopup()" class="window-header-image-menu" height="30" width="40px"/>
+   </div>
+
+
+   <div class="window-code-island" id="code">
+       <textarea class="window-code-island-textarea" id="area">
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>uPanelCode</title>
+   </head>
+   <body>
+
+   </body>
+   </html>
+       </textarea>
+   </div>
+
+
+
+   <div id="myPopup" class="popup">
+       <div class="popup-content">
+           <div class="button" id="q">
+               <h1 class="menu-name" >Panel<span class="menu-name-two">Menu</span></h1>
+               <div class="menu-button-push">
+                   <select class="select-font" id="select">
+                       <option>Arial</option>
+                       <option>Arial Black</option>
+                       <option>Sergoe UI  Light</option>
+                       <option>Sergoe UI  Black</option>
+                       <option>Sergoe UI  Emoji</option>
+                       <option>Sergoe UI  Symbol</option>
+                       <option>Roboto light</option>
+                       <option>Sans-serif</option>
+                       <option>Impact</option>
+
+                   </select>
+                   <input class="color" id="color-picker"  type="color">
+               </div>
+
+               <select class="fontsize" id="size">
+                   <option>Font Size</option>
+                   <option>Normal</option>
+                   <option>Small</option>
+                   <option>Hing</option>
+
+
+               </select>
+               <button class="setup-font"onclick="cx()">Apply font</button>
+               <div class="menu-button-img">
+                   <img  class="imgbutton"  onclick="qwerty()" title="Save Patch" src="diskette.png" height="40"/>
+                   <img src="terminal.png"  onclick="location.href='first.html'" title="Terminal" height="40" class="imgbutton">
+                   <img src="cpu.png"  title="Test patch" height="40" class="imgbutton"/>
+                   <img src="window-link-github.png"  onclick="location.href='first.html'" height="40" class="imgbutton">
+               </div>
+               <div class="menu-button-img-two">
+                   <img src="window-button-reset-reload.png" onclick="location.reload()" height="40" class="imgbutton" title="Reset">
+                   <img src="window-menu-fullscreen.png" onclick="openFullscreen()" height="40" class="imgbutton" title="Full Screen ">
+                   <img src="window-textarea-type-text-style-center-button.png"  onclick="center()" height="40" class="imgbutton" title="text center"/>
+                   <img src="align-left.png" height="40" class="imgbutton"  onclick="right()" title="Text position noraml (left)"/>
+
+               </div>
+               <div class="menu-button-img-three">
+
+                   <img src="save.png" onclick="start()"  height="48" class="centerbutton"/>
+                   <img src="start.png" onclick="saveTextAsFile()"height="48" class="centerbutton"/></div>
+
+               <div class="menu-button-four" onclick="closePopup()">
+                   <h1 class="close-menu"> < click here to close menu  > </h1>
+               </div></div>
+           </div>
+           </div>
+
+
+
+<script>
+
+    let colorPicker;
+    const defaultColor = "#0000ff";
+
+    window.addEventListener("load", startup, false);
+
+    function startup() {
+        colorPicker = document.querySelector("#color-picker");
+        colorPicker.value = defaultColor;
+        colorPicker.addEventListener("input", updateFirst, false);
+        colorPicker.addEventListener("change", updateAll, false);
+        colorPicker.select();
+    }
+
+    function updateFirst(event) {
+        const p = document.querySelector("textarea");
+        if (p) {
+            p.style.color = event.target.value;
+        }
+    }
+
+    function updateAll(event) {
+        document.querySelectorAll("textarea").forEach((p) => {
+            p.style.color = event.target.value;
+        });
+    }
+</script>
+
+</body>
+</html>

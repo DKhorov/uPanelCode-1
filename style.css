@@ -1,0 +1,186 @@
+body{
+    background: radial-gradient(circle at bottom right, #570101, black) no-repeat fixed;
+}
+.window-header{
+    display: flex;
+    justify-content: space-between;
+}
+.window-header-title-text-name{
+    font-family: Arial, serif;
+    color: yellow;
+    margin-left: 50px;
+}
+.window-header-title-name-container-one{
+    font-family: Arial, serif;
+    color: red;
+}
+.window-header-image-menu{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.window-code-island-textarea{
+    width: 92%;
+    height: 80%;
+    position: fixed;
+    margin-left: 50px;
+    border-radius: 5px ;
+    font-size: 15px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.fontsize{
+    width: 230px;
+    height: 40px;
+    font-family: "Segoe UI Light", serif;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+.popup-content {
+    padding: 20px;
+    border: 3px solid black;
+    float: right;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: radial-gradient(circle at bottom right, red, black, red, black) no-repeat fixed;
+    height: 100%;
+}
+.f{
+    display: none;
+}
+.popup-content {
+    width: 1px;/* начальное значение непрозрачности */
+    animation: k ease-in 1; /* добавляем анимацию fadeIn */
+    animation-fill-mode: forwards; /* будет видимым после завершения анимации */
+    animation-duration: 0.2s; /* длительность анимации в 1 секунду */
+}
+
+@keyframes k {
+    0% {
+        width: 1px;
+    }
+    100% {
+        width: 300px;
+    }
+}
+.menu-name{
+    font-family: Arial, serif;
+    color: yellow;
+    text-align: center;
+}
+.menu-name-two{
+    color: red;
+}
+.button{
+    display: none;
+}
+
+.select-font{
+    width: 170px;
+    height: 40px;
+    font-family: "Segoe UI Light", serif;
+    border-radius: 8px;
+}
+option{
+    border-radius: 1px;
+
+}
+input[type="color"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 52px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: -1px;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch{
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #020929;
+}
+
+.menu-button-push{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding-top: 20px;
+ }
+.menu-button-img{
+    margin-left: 26px;
+    margin-top: 30px;
+}
+.imgbutton{
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+    transition: 0.4s;
+}
+.imgbutton:hover{
+    height: 45px;
+}
+.menu-button-img-two{
+    margin-left: 26px;
+    margin-top: 10px;
+}
+.menu-button-img-three{
+    margin-left: 26px;
+    margin-top: 20px;
+}
+.close-menu{
+    font-family: "Segoe UI Light", serif;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: 70px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.menu-button-four{
+    width: 290px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.window-code-island-textarea{
+    font-family: Arial, serif;
+}
+.setup-font{
+    width: 230px;
+    height: 40px;
+    font-family: "Segoe UI Light", serif;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+.setup-font:hover{
+    background-color: black;
+    color: white;
+}
+.select-font{
+    margin-bottom: 10px;
+}
+.fontsize{
+    margin-bottom: 10px;
+}
